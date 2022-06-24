@@ -1,0 +1,58 @@
+<!-- css class method
+
+ html na tag par cladd add or remove karva mate use thai 6e
+
+ three method:
+ 1. add class : for class add 
+ 2.remove class: already class on tag and remove this class so
+ 3. toggle class : add & remove both working 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css add/remove/toggle</title>
+    <style>
+      #box {
+        width: 70%;
+        height: 200px;
+        padding: 10px;
+        border: 1px solid #000;
+        overflow: auto;
+      }
+
+      .first {
+        background-color: blue;
+        color: white;
+      }
+
+      .second {
+        background-color: darkorange;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JQuery add/remove/toggle css class method</h1>
+
+    <div id="box">
+      <h2>Test box</h2>
+      <h3>
+        1. when add button click background-color class blue add in background
+      </h3>
+
+      <h3>2. when click remove button then remove this class</h3>
+    </div>
+
+    <br />
+    <button id="add_id">Add Class</button>
+    <button id="remove_id">Remove Class</button>
+    <button id="toggle_id">Toggle Class</button>
+
+    <script src="../js/jquery.js"></script>
+    <script src="./event.js"></script>
+  </body>
+</html>

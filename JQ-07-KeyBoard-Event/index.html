@@ -1,0 +1,69 @@
+<!-- 
+      <==== keyboard event  ====> 
+
+
+      1.keypress()
+      2.keydowm()
+      3.keyup()
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box-1 {
+        background-color: pink;
+        padding: 10px;
+        border: 1px solid #000;
+        margin-bottom: 20px;
+      }
+      #box-2 {
+        background-color: orangered;
+        padding: 10px;
+        border: 1px solid #000;
+        margin-bottom: 20px;
+      }
+
+      #box-3 {
+        background-color: teal;
+        padding: 10px;
+        border: 1px solid #000;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mouse Event</h1>
+
+    <div id="box-1" class="test">
+      <h1>KeyPress event</h1>
+      <p>press any key</p>
+    </div>
+
+    <div id="box-2" class="test">
+      <h1>keyup click</h1>
+      <p>and hold done after key up</p>
+    </div>
+
+    <script src="./../js/jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        //keypress event
+        // NOTE : give to whole Body
+        $("body").keypress(function () {
+          $("body").css("background-color", "yellow");
+        });
+
+        //double-click event
+        $("body").keyup(function () {
+          $("body").css("background-color", "blue");
+        });
+      });
+    </script>
+  </body>
+</html>

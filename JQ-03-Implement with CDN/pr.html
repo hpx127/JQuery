@@ -1,0 +1,35 @@
+<!-- what is CDN PATH
+
+-- cdb means " CONTENT DELIVERY NETWORK" - means apdi website no 
+   conent jese ki html,css,image vagar apda server mathi avse abd 
+   je jquery 6e te cdn parthi avse to su ke ama load vadhi jase
+
+   ama su thase ke je apde folder ma mukin jquery karta to te 
+   30/35 kb no load lai ne chal ti to te have nai lai ane direct
+    aa cdn path thi bija server etle ke third party server par aa
+     jquery no load badho jati rahse ....ok
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <h1>hello pc this is my Jquery project</h1>
+
+    <!-- CDN PATH -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        alert(1);
+      });
+    </script>
+  </body>
+</html>

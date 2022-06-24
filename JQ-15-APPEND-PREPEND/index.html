@@ -1,0 +1,54 @@
+<!-- APPEND PREPEND
+
+-> mari pase ek div 6e teni under som econtent 6e have mare ee div na
+ content ni niche koi heading line set karvi 6e to tena mate use that 
+ appned and koi line content na uper set karvani 6e to tena mate used 
+ thai prepend
+ -----------------------  
+ -  < set for prepend> -  <-------- prepend
+ -  this is my conten  -
+ -  and it my content  -
+ -  of them            - 
+ -  <set append>       -  <--------- append
+ -----------------------
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>on-off method</title>
+    <style>
+      #box {
+        width: 70%;
+        height: 200px;
+        background-color: lightgreen;
+        padding: 10px;
+        border: 1px solid #000;
+        overflow: auto;
+      }
+
+      .blue {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JQuery Append/Prepend</h1>
+
+    <div id="box">
+      <h2>Test box</h2>
+      <h3>when append click adding handing in bottom</h3>
+
+      <h3>when prepend click adding hading on top</h3>
+    </div>
+
+    <button id="append_btn">Append</button>
+    <button id="prepend_btn">Prepend</button>
+
+    <script src="../js/jquery.js"></script>
+    <script src="./event.js"></script>
+  </body>
+</html>

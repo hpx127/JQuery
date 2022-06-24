@@ -1,0 +1,60 @@
+<!-- 
+
+  when starting jquery always make boiler-plate
+
+  <script>
+    $(document).ready(function(){  //(document) is selector & ready() is method
+         
+        //all jquery code
+    })
+  </script>
+
+===> jQuery $(document).ready() is a basic part of using jQuery. 
+
+===> The jQuery document ready function executes when the DOM (Document Object Model) 
+     is completely loaded in the browser. jQuery document ready is used to initialize 
+     jQuery/JavaScript code after the DOM is ready, and is used most times when working
+      with jQuery.  
+
+===> jQuery selectors "allow you to select and manipulate HTML element(s)".
+
+===> jQuery selectors are used to "find" (or select) HTML elements based on their 
+     name, id, classes, types, attributes, values of attributes and much more.
+
+===> It's based on the existing CSS Selectors, and in addition, it has some own custom selectors.
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Hell this is jquery</h1>
+    <div id="test1">
+      <h2>TEST-1 BOX</h2>
+      <p>i am test -1 box ,i am using jqueery fundamental</p>
+    </div>
+
+    <div id="test2">
+      <h2>TEST-2 BOX</h2>
+      <p>i am test -2 box ,i am using jqueery fundamental</p>
+    </div>
+
+    <script src="./../js/jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        var idTag1 = $("#test1").html();
+        console.log(idTag1);
+
+        var idTag2 = $("#test2").html();
+        console.log(idTag2);
+      });
+    </script>
+  </body>
+</html>

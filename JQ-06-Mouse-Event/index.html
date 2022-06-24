@@ -1,0 +1,97 @@
+<!-- 
+  <==== muse event ===>
+
+ 1. click
+ 2.double click
+ 3.contextmenu
+ 4.mouseenter
+ 5.mouseleave
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box-1 {
+        background-color: pink;
+        padding: 10px;
+        border: 1px solid #000;
+        margin-bottom: 20px;
+      }
+      #box-2 {
+        background-color: orangered;
+        padding: 10px;
+        border: 1px solid #000;
+        margin-bottom: 20px;
+      }
+
+      #box-3 {
+        background-color: teal;
+        padding: 10px;
+        border: 1px solid #000;
+        margin-bottom: 20px;
+      }
+      #box-4 {
+        background-color: greenyellow;
+        padding: 10px;
+        border: 1px solid #000;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mouse Event</h1>
+
+    <div id="box-1" class="test">
+      <h1>Click event</h1>
+      <p>hll i ma test box</p>
+    </div>
+
+    <div id="box-2" class="test">
+      <h1>Double click</h1>
+      <p>hll i ma test box</p>
+    </div>
+
+    <div id="box-3" class="test">
+      <h1>Right click</h1>
+      <p>hll i ma test box</p>
+    </div>
+
+    <div id="box-4" class="test">
+      <h1>Mouse enter/leave</h1>
+      <p>hll i ma test box</p>
+    </div>
+
+    <script src="./../js/jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        //click event
+        $("#box-1").click(function () {
+          $("#box-1").css("background-color", "yellow");
+        });
+
+        //double-click event
+        $("#box-2").dblclick(function () {
+          $("#box-2").css("background-color", "blue");
+        });
+
+        //context menue means right click
+        $("#box-3").contextmenu(function () {
+          $("#box-3").css("background-color", "tomato");
+        });
+
+        //Mouse enter-leave
+        $("#box-4").mouseenter(function () {
+          $("#box-4").css("background-color", "blueviolet");
+        });
+        $("#box-4").mouseleave(function () {
+          $("#box-4").css("background-color", "greenyellow");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!-- 
+selectors used thai Target DOM element object ane te pa6i method par jai
+
+
+selctors type:
+ basic css: 
+
+1. class--- $(".class_name")
+2. id ---   $("#id_name")
+3. Tag ---  $("tag_name")
+
+advance selectors:
+1.$("*") -- html ni under badha tag leva mate star
+2.$("ul li") -- parent child
+3.$(".abc , .xyz") -- multiple class
+4.$("h1,div,p") -- multiple tag
+5.$("p:first") -- html ma pehlo je pan pargraph avto hoi tena pa j lagse
+6.$("p:last")
+7.$("li:odd")
+8.$("li:even")
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #box {
+        padding: 10px;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>i am selectors example</h1>
+    <!-- manually withou put class -->
+    <div id="box" class="test">
+      <h2>Test Box-2</h2>
+      <p>hel i am tehxjvh vjhxcvbb jjj jhfj</p>
+    </div>
+
+    <ul id="list">
+      <li>list-1</li>
+      <li class="test">list-2</li>
+      <li>list-3</li>
+      <li class="test">list-4</li>
+    </ul>
+
+    <ul id="mult_list">
+      <li>how to multiple css addd</li>
+    </ul>
+
+    <script src="./../js/jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#list").css("color", "red"); //single- css(proprtie_name,proprtie_value)
+
+        //multiple css
+        $("#mult_list").css({ color: "red", border: "5px solid green" });
+
+        $(".test").css("background", "yellow");
+
+        $("*").css("font-family", "'Courier New', Courier, monospace");
+
+        //equal to greater-than less-than
+        //$("ul li:eq(2)").css("border", "2px solid blue");
+        //$("ul li:gt(2)").css("border", "2px solid pink");
+        //$("ul li:lt(2)").css("border", "2px solid brown");
+      });
+    </script>
+  </body>
+</html>

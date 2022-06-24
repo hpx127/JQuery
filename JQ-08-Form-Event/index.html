@@ -1,0 +1,59 @@
+<!-- 
+    FORM EVENT
+
+    1. focus()  ==> input box ma focus karsu to aa trigger thai jase
+    2. blur()   ==> undhu focus jevu hatavisu etle blur
+    3. change() ==> always use with "select box" koi pan jayare select option ma change kare 
+                    etle aa event trigger thai jase ,
+    4. select() ==> input box ni under lakhelu jyare select kare tyare aa event select thai jase
+    5. submit() ==> click karse aa event fire thai jase 
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #box {
+        background-color: pink;
+        padding: 10px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FORM EVENT</h1>
+    <form action="" id="formData">
+      <label for="">Name</label>
+      <input type="text" id="nameData" />
+      <br />
+      <br />
+      <label for="">Class</label>
+      <input type="text" id="classData" />
+      <br />
+      <br />
+      <label for="">Country</label>
+      <select id="countryData">
+        <option value="Bharat">Bharat</option>
+        <option value="Russia">Russia</option>
+        <option value="USA">USA</option>
+      </select>
+
+      <br />
+      <br />
+      <input type="submit" />
+    </form>
+
+    <div id="dataGet" style="border: 1px solid teal; margin-top: 30px">
+      <!-- {{ data get}} -->
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="./event.js"></script>
+  </body>
+</html>
